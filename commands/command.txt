@@ -1,0 +1,19 @@
+1. use <database_name>
+ Switches to the specified database. If the database does not exist, it will be created when a collection is added.
+command:
+ use myDatabase.
+
+2. db.createCollection()
+Explicitly creates a collection in the current database.
+command:
+db.createCollection("myCollection")
+
+3. db.getCollectionNames()
+ Lists all the collections in the current database.
+command:
+db.getCollectionNames()
+
+4. db.collection.insertOne()
+Inserts a single document into the specified collection.
+command:s
+db.myCollection.insertOne({ name: "John", age: 30 })
